@@ -234,7 +234,8 @@ Each layer uses capabilities of a lower layer, adds own rules and procedures, to
      strcpy(servaddr.sun_path, "kanalobjekt");
 
      sendto (sockfd, "Hallo!", strlen("Hallo!"), 0, 
-	     &servaddr, sizeof(servaddr);
+	     &servaddr, sizeof(servaddr)
+	     );
    }
 #+END_SRC
 
